@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %} Sharpen your brain {% endblock %}
+{% block content %}
+<div class="mt-3">
+{% comment %} <img src="{% static 'img/home.jpeg' %}" class="rounded mx-auto d-block" alt="Home" height="320px"> {% endcomment %}
+</div>
+<br>
+<center><h1 style="color:rgb(187, 155, 209)">Sharpen your Brain</h1></center>
+<br>
+<div class="col align-self-center">
+    <center><p class="h2 text-warning">Disconnect From Technology</p></center>
+    <center><p class="h3 text mt-3">Reconnect With Each Other</p></center>
+    </div>
+<center><a href="{% url 'game' %}"><button type="button" class="btn btn-primary btn-md mt-3 shadow">Let's Get Started</button></a></center>
+
+
+
+{% endblock %}
